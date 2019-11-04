@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Look for accomodation with valid params",
+        "description": "",
+        "id": "look-for-accomodation;look-for-accomodation-with-valid-params;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11212855400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The airbnb web site is accessible",
+            "match": {
+              "location": "MyStepdefs.theAirbnbWebSiteIsAccessible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1151601500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The cookies policy is closed",
+            "match": {
+              "location": "MyStepdefs.theCookiesPolicyIsClosed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 796580800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The search form is filled up with a location \"California, Estados Unidos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "California, Estados Unidos",
+                  "offset": 46
+                }
+              ],
+              "location": "MyStepdefs.theSearchFormIsFilledUpWithALocation(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Fail while typing checkin date\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat Pages.AirBnbSearchPage.selectCheckInDate(AirBnbSearchPage.java:86)\r\n\tat implementation.StepImplementation.selectCheckInDate(StepImplementation.java:29)\r\n\tat implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.CGLIB$selectCheckInDate$1(\u003cgenerated\u003e)\r\n\tat implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2$$FastClassByCGLIB$$af686886.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:464)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:449)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:165)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:152)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:70)\r\n\tat implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.selectCheckInDate(\u003cgenerated\u003e)\r\n\tat definitions.MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(MyStepdefs.java:38)\r\n\tat ✽.The search form is filled up with a checkin \"February 5, 2020\" and a checkout \"February 22, 2020\" date(src/test/resources/features/search.feature:7)\r\n",
+              "duration": 7236034900,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The search form is filled up with a checkin \"February 5, 2020\" and a checkout \"February 22, 2020\" date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "February 5, 2020",
+                  "offset": 45
+                },
+                {
+                  "val": "February 22, 2020",
+                  "offset": 79
+                }
+              ],
+              "location": "MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The search form is filled up with a number of guests  \"4\" ,  \"2\" , \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 55
+                },
+                {
+                  "val": "2",
+                  "offset": 62
+                },
+                {
+                  "val": "1",
+                  "offset": 68
+                }
+              ],
+              "location": "MyStepdefs.theSearchFormIsFilledUpWithANumberOfGuests(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The result page is displayed",
+            "match": {
+              "location": "MyStepdefs.theResultPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Look for accomodation",
+    "description": "",
+    "id": "look-for-accomodation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/search.feature",
+    "tags": []
+  }
+]

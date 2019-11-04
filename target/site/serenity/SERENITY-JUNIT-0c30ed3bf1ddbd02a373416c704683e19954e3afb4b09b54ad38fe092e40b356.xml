@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Look for accomodation" skipped="0" tests="1" time="20.68" timestamp="2019-11-04 10:35:58"><testcase name="Look for accomodation with valid params"><failure message="Fail while typing checkin date" type="java.lang.AssertionError">Fail while typing checkin date</failure><system-err>Fail while typing checkin date&#13;
+Pages.AirBnbSearchPage.selectCheckInDate(AirBnbSearchPage.java:86)&#13;
+implementation.StepImplementation.selectCheckInDate(StepImplementation.java:29)&#13;
+definitions.MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(MyStepdefs.java:38)&#13;
+✽.The search form is filled up with a checkin "February 5, 2020" and a checkout "February 22, 2020" date(src/test/resources/features/search.feature:7)&#13;
+</system-err></testcase></testsuite>
