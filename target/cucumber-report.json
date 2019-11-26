@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11212855400,
+              "duration": 11579362900,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1151601500,
+              "duration": 1400244200,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 796580800,
+              "duration": 1214345700,
               "status": "passed"
             },
             "line": 6,
@@ -54,9 +54,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: Fail while typing checkin date\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat Pages.AirBnbSearchPage.selectCheckInDate(AirBnbSearchPage.java:86)\r\n\tat implementation.StepImplementation.selectCheckInDate(StepImplementation.java:29)\r\n\tat implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.CGLIB$selectCheckInDate$1(\u003cgenerated\u003e)\r\n\tat implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2$$FastClassByCGLIB$$af686886.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:464)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:449)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)\r\n\tat net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:165)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:152)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:70)\r\n\tat implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.selectCheckInDate(\u003cgenerated\u003e)\r\n\tat definitions.MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(MyStepdefs.java:38)\r\n\tat ✽.The search form is filled up with a checkin \"February 5, 2020\" and a checkout \"February 22, 2020\" date(src/test/resources/features/search.feature:7)\r\n",
-              "duration": 7236034900,
-              "status": "failed"
+              "duration": 1924563400,
+              "status": "passed"
             },
             "line": 7,
             "name": "The search form is filled up with a checkin \"February 5, 2020\" and a checkout \"February 22, 2020\" date",
@@ -77,7 +76,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1092682700,
+              "status": "passed"
             },
             "line": 8,
             "name": "The search form is filled up with a number of guests  \"4\" ,  \"2\" , \"1\"",
@@ -102,7 +102,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 272668200,
+              "status": "passed"
             },
             "line": 9,
             "name": "The result page is displayed",

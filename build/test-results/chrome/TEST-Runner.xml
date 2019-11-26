@@ -15,30 +15,9 @@
 
   Scenario Outline: Look for accomodation with valid params                                                    ?[90m# src/test/resources/features/search.feature:12?[0m
 
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/search.feature:12 ?[0m# Look for accomodation with valid params
-
-1 Scenarios (?[31m1 failed?[0m)
-6 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m3 passed?[0m)
-0m25,817s
-
-java.lang.AssertionError: Fail while typing checkin date
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at Pages.AirBnbSearchPage.selectCheckInDate(AirBnbSearchPage.java:86)
-	at implementation.StepImplementation.selectCheckInDate(StepImplementation.java:29)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.CGLIB$selectCheckInDate$1(<generated>)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2$$FastClassByCGLIB$$af686886.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:464)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:165)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:152)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:70)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.selectCheckInDate(<generated>)
-	at definitions.MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(MyStepdefs.java:38)
-	at ?.The search form is filled up with a checkin "February 5, 2020" and a checkout "February 22, 2020" date(src/test/resources/features/search.feature:7)
+1 Scenarios (?[32m1 passed?[0m)
+6 Steps (?[32m6 passed?[0m)
+0m23,644s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[36m

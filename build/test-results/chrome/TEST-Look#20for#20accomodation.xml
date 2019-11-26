@@ -1,73 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Look for accomodation" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-11-04T09:35:59" hostname="SG-2791" time="25.405">
+<testsuite name="Look for accomodation" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-26T06:58:48" hostname="SG-2791" time="23.083">
   <properties/>
-  <testcase name="Look for accomodation with valid params" classname="Look for accomodation" time="25.405">
-    <failure message="java.lang.AssertionError: Fail while typing checkin date" type="java.lang.AssertionError">java.lang.AssertionError: Fail while typing checkin date
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at Pages.AirBnbSearchPage.selectCheckInDate(AirBnbSearchPage.java:86)
-	at implementation.StepImplementation.selectCheckInDate(StepImplementation.java:29)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.CGLIB$selectCheckInDate$1(&lt;generated&gt;)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2$$FastClassByCGLIB$$af686886.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:464)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:165)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:152)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:70)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.selectCheckInDate(&lt;generated&gt;)
-	at definitions.MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(MyStepdefs.java:38)
-	at ✽.The search form is filled up with a checkin &quot;February 5, 2020&quot; and a checkout &quot;February 22, 2020&quot; date(src/test/resources/features/search.feature:7)
-</failure>
-  </testcase>
+  <testcase name="Look for accomodation with valid params" classname="Look for accomodation" time="23.083"/>
   <system-out><![CDATA[    ?[32mGiven ?[0m?[32mThe airbnb web site is accessible?[0m                                                                    ?[90m# MyStepdefs.theAirbnbWebSiteIsAccessible()?[0m
     ?[32mAnd ?[0m?[32mThe cookies policy is closed?[0m                                                                           ?[90m# MyStepdefs.theCookiesPolicyIsClosed()?[0m
     ?[32mWhen ?[0m?[32mThe search form is filled up with a location "?[0m?[32m?[1mCalifornia, Estados Unidos?[0m?[32m"?[0m                             ?[90m# MyStepdefs.theSearchFormIsFilledUpWithALocation(String)?[0m
+El valor de i es: 0
+El valor de i es: 1
+El valor de i es: 2
+El valor de i es: 3
+El valor de i es: 4
 La fecha a buscar en el calendario es: 5 de febrero de 2020
-*** The error in the selectCheckInDate method is:  net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-    ?[31mAnd ?[0m?[31mThe search form is filled up with a checkin "?[0m?[31m?[1mFebruary 5, 2020?[0m?[31m" and a checkout "?[0m?[31m?[1mFebruary 22, 2020?[0m?[31m" date?[0m ?[90m# MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(String,String)?[0m
-      ?[31mjava.lang.AssertionError: Fail while typing checkin date
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at Pages.AirBnbSearchPage.selectCheckInDate(AirBnbSearchPage.java:86)
-	at implementation.StepImplementation.selectCheckInDate(StepImplementation.java:29)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.CGLIB$selectCheckInDate$1(<generated>)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2$$FastClassByCGLIB$$af686886.invoke(<generated>)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:464)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:449)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:165)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:152)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:70)
-	at implementation.StepImplementation$$EnhancerByCGLIB$$a01af4e2.selectCheckInDate(<generated>)
-	at definitions.MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(MyStepdefs.java:38)
-	at ?.The search form is filled up with a checkin "February 5, 2020" and a checkout "February 22, 2020" date(src/test/resources/features/search.feature:7)
-?[0m
-    ?[36mAnd ?[0m?[36mThe search form is filled up with a number of guests  "?[0m?[36m?[1m4?[0m?[36m" ,  "?[0m?[36m?[1m2?[0m?[36m" , "?[0m?[36m?[1m1?[0m?[36m"?[0m                                 ?[90m# MyStepdefs.theSearchFormIsFilledUpWithANumberOfGuests(String,String,String)?[0m
-    ?[36mThen ?[0m?[36mThe result page is displayed?[0m                                                                          ?[90m# MyStepdefs.theResultPageIsDisplayed()?[0m
+La fecha a buscar en el calendario es: 22 de febrero de 2020
+    ?[32mAnd ?[0m?[32mThe search form is filled up with a checkin "?[0m?[32m?[1mFebruary 5, 2020?[0m?[32m" and a checkout "?[0m?[32m?[1mFebruary 22, 2020?[0m?[32m" date?[0m ?[90m# MyStepdefs.theSearchFormIsFilledUpWithACheckinAndACheckoutDate(String,String)?[0m
+    ?[32mAnd ?[0m?[32mThe search form is filled up with a number of guests  "?[0m?[32m?[1m4?[0m?[32m" ,  "?[0m?[32m?[1m2?[0m?[32m" , "?[0m?[32m?[1m1?[0m?[32m"?[0m                                 ?[90m# MyStepdefs.theSearchFormIsFilledUpWithANumberOfGuests(String,String,String)?[0m
+    ?[32mThen ?[0m?[32mThe result page is displayed?[0m                                                                          ?[90m# MyStepdefs.theResultPageIsDisplayed()?[0m
 ]]></system-out>
-  <system-err><![CDATA[nov. 04, 2019 10:35:59 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[nov. 26, 2019 7:58:48 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 23259
+Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 1688
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1572860162.802][WARNING]: Timed out connecting to Chrome, retrying...
-nov. 04, 2019 10:36:04 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1574751532.124][WARNING]: Timed out connecting to Chrome, retrying...
+nov. 26, 2019 7:58:54 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[1572860166.913][WARNING]: Timed out connecting to Chrome, retrying...
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[1574751536.226][WARNING]: Timed out connecting to Chrome, retrying...
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED: Look for accomodation with valid params
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Select check in date: February 5, 2020
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Fail while typing checkin date
+TEST PASSED: Look for accomodation with valid params
+----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

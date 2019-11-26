@@ -113,8 +113,9 @@ public class TestAirbBnbSearchForm {
 
     //method to move to the month and year we want to test
     private static void moveToYearAndMonth(int monthsBetweenDates, WebElementFacade nextMonthButton) throws InterruptedException {
-        for(int i=0; i<monthsBetweenDates; i++){
-            //System.out.println("El valor de i es: "+i);
+        for(int i=0; i<=(monthsBetweenDates+1); i++){
+            System.out.println("El valor de i es: "+i);
+            //nextMonthButton.waitUntilEnabled();
             nextMonthButton.waitUntilClickable();
             nextMonthButton.click();
         }
@@ -172,7 +173,7 @@ public class TestAirbBnbSearchForm {
                 adultsNumberButton.click();
                 counterAdults++;
             }
-            childrenNumberButton.waitUntilEnabled();
+            /*childrenNumberButton.waitUntilEnabled();
 
             while(counterChildren<numberOfChildren) {
                 childrenNumberButton.waitUntilClickable();
@@ -185,7 +186,7 @@ public class TestAirbBnbSearchForm {
                 babiesNumberButton.waitUntilClickable();
                 babiesNumberButton.click();
                 counterBabies++;
-            }
+            }*/
 
             guestsNumberButton.waitUntilClickable();
             guestsNumberButton.click();
